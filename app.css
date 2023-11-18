@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-profil {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+}
+
+.card-profil img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9;
+}
+
+.profil-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.profil-detail h1,
+.profil-detail p {
+    color: white;
+}
+
+.profil-detail img {
+    width: 150px;
+    height: 150px;
+    position: static;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: border 0.5s;
+}
+
+.profil-detail img:hover {
+    border: 5px solid white;
+}
+
+.about-me {
+    width: 100%;
+    padding: 20px;
+}
+
+.about-me div {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-left: 10px solid black;
+}
+
+.about-me table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.about-me table td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.about-me table ol {
+    list-style-position: inside;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0E0E0E;
+    padding: 15px;
+}
+
+.footer p {
+    color: white;
+    font-family: cursive;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+@media screen and (max-width:768px) {
+
+    .about-me div,
+    .about-me table {
+        width: 98%;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main class="card-profil">
+        <img src="bg-1.jpg" alt="">
+        <div class="profil-detail">
+            <img src="foto-diri.jpg" alt="">
+            <h1>Candra Wirawan</h1>
+            <p id="text-run"></p>
+        </div>
+    </main>
+    <section class="about-me">
+        <div>TENTANG SAYA</div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nama lengkap</td>
+                    <td>Candra Wirawan</td>
+                </tr>
+                <tr>
+                    <td>Tempat tanggal lahir</td>
+                    <td>Banyumas 12-juni-2005 </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Desa Piasa Kulon rt04/04 ,kec Somagede kab Banyumas provinsi Jawa-Tengah</td>
+                </tr>
+                <tr>
+                    <td>Pendidikan</td>
+                    <td>
+                        <ol>
+                            <li>SDN 1 PIASA KULON</li>
+                            <li>SMPN 1 SOMAGEDE</li>
+                            <li>SMKN 1 SUSUKAN (TKJ)</li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer class="footer">
+        <p>Cari tahu lebih dalam tentang saya</p>
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+    </footer>
+    <script>
+    let text = "Hi i'm candra wirawan and i web developer "
+    let tmp = ""
+    let count = 0
+    let interval = setInterval(() => {
+        tmp += text[count]
+        count++
+        document.querySelector("#text-run").innerHTML = tmp
+        if (count >= text.length) {
+            clearInterval(interval)
+        }
+    }, 80)
+    </script>
+</body>
+
+</html>
